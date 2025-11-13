@@ -24,6 +24,9 @@ configurations {
 
 repositories {
   mavenCentral()
+  maven {
+    url = uri("https://nexus.chuseok22.com/repository/maven-releases/")
+  }
 }
 
 dependencies {
@@ -37,6 +40,12 @@ dependencies {
   testImplementation("org.springframework.boot:spring-boot-starter-test")
   testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
   testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+  // Swagger
+  implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9")
+
+  // Chuseok22 Sejong Portal Login
+  implementation("com.chuseok22:sejong-portal-login:1.0.0")
 }
 
 kotlin {
