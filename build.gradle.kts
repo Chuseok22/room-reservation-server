@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "com.chuseok22"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.2"
 description = "room-reservation-server"
 
 java {
